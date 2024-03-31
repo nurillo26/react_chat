@@ -120,16 +120,16 @@ const ChatList = () => {
 
               if (friendData === undefined) {
                 return null;
+              } else {
+                const typedFriendData: UserData = friendData;
+                return (
+                  <ChatListItem
+                    key={index}
+                    {...typedFriendData}
+                    lastMessageText={lastMessage || 'Нет сообщений'}
+                  />
+                );
               }
-
-              // Разобраться с friendData!!!
-              return (
-                <ChatListItem
-                  key={index}
-                  {...friendData}
-                  lastMessageText={lastMessage || 'Нет сообщений'}
-                />
-              );
             })}
       </div>
 

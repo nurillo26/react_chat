@@ -31,7 +31,7 @@ const SettingsBlock = () => {
 
       // Загрузка файла в firebase
       uploadBytes(fileRef, selectedFile)
-        .then((snapshot) => {
+        .then((_snapshot) => {
           // Получение ссылки на файл в firebase storage
           getDownloadURL(fileRef)
             .then((url) => {
@@ -86,7 +86,7 @@ const SettingsBlock = () => {
 
         <div className={styles.user_ava_wrap}>
           <div className={styles.ava_img}>
-            <img src={loggedInUser.photoURL} alt="ava" />
+            <img src={loggedInUser.photoURL || '/menu-icons/avatar.svg'} alt="ava" />
           </div>
 
           <label style={{ cursor: 'pointer' }}>

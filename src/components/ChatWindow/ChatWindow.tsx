@@ -11,7 +11,17 @@ interface UserData {
   online: boolean;
   photoURL: string;
   uid: string;
-  lastMessageText: string;
+}
+
+interface Message {
+  senderId: string;
+  text: string;
+  timestamp: number;
+}
+
+interface ChatData {
+  members: string[];
+  messages: Message[];
 }
 
 const ChatWindow = () => {
@@ -19,10 +29,11 @@ const ChatWindow = () => {
   const allUsers = useSelector((state: RootState) => state.chatSlise.allUsers);
   const allChats = useSelector((state: RootState) => state.chatSlise.chats);
 
-  const selectedFriendInfo = allUsers.find((user: UserData) => user.uid === id);
+  const selectedFriendInfo: UserData = allUsers.find((user: UserData) => user.uid === id)!;
+
   const selectedFriendMessages = allChats
-    .filter((chat) => chat.members.includes(id))
-    .flatMap((chat) => chat.messages);
+    .filter((chat: ChatData) => chat.members.includes(id || ''))
+    .flatMap((chat: ChatData) => chat.messages);
 
   return (
     <div className={styles.chat_window_wrap}>

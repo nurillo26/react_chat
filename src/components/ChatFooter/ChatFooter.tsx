@@ -1,18 +1,9 @@
 import { FC, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
-import {
-  db,
-  databaseRef,
-  push,
-  databaseUpdate,
-  get,
-  query,
-  orderByChild,
-  equalTo,
-} from '../../firebase';
+import { db, databaseRef, databaseUpdate, get, query } from '../../firebase';
 
-import EmojiPicker from 'emoji-picker-react';
+import EmojiPicker, { Theme } from 'emoji-picker-react';
 
 import styles from './ChatFooter.module.css';
 
@@ -60,7 +51,7 @@ const ChatFooter: FC<ChatFooterProps> = ({ friendUid }) => {
     }
   };
 
-  const onEmojiClick = ({ emoji }) => setTextMessage(`${textMessage}${emoji}`);
+  const onEmojiClick = ({ emoji }: { emoji: string }) => setTextMessage(`${textMessage}${emoji}`);
 
   return (
     <div className={styles.chat_footer}>
@@ -107,13 +98,13 @@ const ChatFooter: FC<ChatFooterProps> = ({ friendUid }) => {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_2497_26541)">
+              <g clipPath="url(#clip0_2497_26541)">
                 <path
                   d="M7 7L17 17M7 17L17 7"
                   stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </g>
               <defs>
@@ -129,7 +120,7 @@ const ChatFooter: FC<ChatFooterProps> = ({ friendUid }) => {
               className={styles.emoji_picker_comp}
               height={400}
               searchDisabled
-              theme="dark"
+              theme={Theme.DARK}
               onEmojiClick={onEmojiClick}
             />
           )}

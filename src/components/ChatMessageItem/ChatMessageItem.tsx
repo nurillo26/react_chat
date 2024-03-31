@@ -4,13 +4,12 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 
 interface Message {
-  type: string;
   senderId: string;
   text: string;
   timestamp: number;
 }
 
-const ChatMessageItem: FC<Message> = ({ type, senderId, text, timestamp }) => {
+const ChatMessageItem: FC<Message> = ({ senderId, text, timestamp }) => {
   const { uid } = useSelector((state: RootState) => state.userData.loggedInUser);
 
   const formattedDate = new Date(timestamp).toLocaleString();

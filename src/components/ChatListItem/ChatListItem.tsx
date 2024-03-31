@@ -14,7 +14,6 @@ interface ChatListItemProps {
 
 const ChatListItem: FC<ChatListItemProps> = ({
   displayName,
-  email,
   online,
   photoURL,
   uid,

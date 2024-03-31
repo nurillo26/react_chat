@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 interface INavMenuIconProps {
   iconName: string;
 }
-// /menu-icons/home.svg
+
 const NavMenuIcon: FC<INavMenuIconProps> = ({ iconName }) => {
   return (
     <NavLink to={iconName} className={({ isActive }) => (isActive ? styles.menu_link_active : '')}>
