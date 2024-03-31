@@ -1,0 +1,36 @@
+.chat_list_item_wrap {
+  border-radius: 10px;
+
+  width: 100%;
+  height: 70px;
+  padding: 8px;
+
+  background: #312f2f;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  justify-content: center;
+  align-content: center;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.chat_list_item_wrap:hover {
+  background-color: #5b5757;
+}
+
+.friend_chat_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  padding-left: 10px;
+}
+
+.friend_chat_last_message {
+  font-size: 14px;
+}
+
+.actvie_chat .chat_list_item_wrap {
+  background-color: #5b5757;
+}

@@ -1,0 +1,22 @@
+.app_wrap {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: purple; */
+
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 7px;
+
+  background-color: #000;
+
+  color: #fff;
+
+  overflow: hidden;
+}
+
+.app_left_side {
+  background-color: #1f1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

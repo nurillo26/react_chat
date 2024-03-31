@@ -1,0 +1,67 @@
+.inputBlock {
+  width: 418px;
+  height: 78px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.inputTitle {
+  font-weight: 400;
+  font-size: 15px;
+  color: #d8d8d8;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputBlock input {
+  width: 418px;
+  height: 49px;
+
+  padding: 15px 49px;
+
+  border: 1px solid #a9a9a9;
+  border-radius: 10px;
+
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+
+  background-color: transparent;
+}
+
+.inputIcon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inputIcon img {
+  width: 100%;
+  height: 100%;
+}
+
+.inputTypeIcon {
+  left: 15px;
+}
+
+.passwordEyeIcon {
+  right: 15px;
+
+  cursor: pointer;
+}
+
+.error_block {
+  color: #ee7171;
+  font-size: 12px;
+  position: absolute;
+  left: 5%;
+  bottom: -22%;
+}

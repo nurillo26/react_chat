@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.form_page {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url('./assets/bg.jpg') center/cover no-repeat;
+}
+
+.outlet_side {
+  background-color: #1f1d1d;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

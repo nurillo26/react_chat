@@ -1,0 +1,33 @@
+.menu_link_active {
+  background-color: #312f2f;
+
+  border-radius: 50%;
+}
+
+.menu_icon_wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_icon_wrap img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.menu_icon_wrap:hover {
+  background-color: #312f2f;
+  border-radius: 50%;
+}
+
+.icon_title {
+  display: inline-block;
+  width: 100%;
+
+  font-size: 12px;
+}

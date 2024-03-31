@@ -1,0 +1,9 @@
+.chatblock_wrap {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 320px 1fr;
+
+  background: url('../../assets/chat_bg.jpg') center/cover no-repeat;
+}

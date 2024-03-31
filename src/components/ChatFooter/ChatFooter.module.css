@@ -1,0 +1,64 @@
+.chat_footer {
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 38px;
+  gap: 10px;
+}
+
+.chat_footer_input {
+  position: relative;
+}
+
+.chat_footer_input input {
+  width: 100%;
+  height: 100%;
+  background-color: #1f1d1d;
+  color: #fff;
+
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  padding: 0 40px;
+}
+
+.emoji_btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.emoji_btn svg {
+  cursor: pointer;
+}
+
+.emoji_picker_comp {
+  position: absolute;
+  top: -435px;
+  left: -10px;
+}
+
+.docs_btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  cursor: pointer;
+}
+
+.chat_footer_send_btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}

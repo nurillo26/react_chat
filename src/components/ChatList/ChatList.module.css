@@ -1,0 +1,49 @@
+.chat_list_wrap {
+  background-color: #1f1d1d;
+
+  padding: 10px;
+}
+
+.chat_list_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat_list_header svg {
+  cursor: pointer;
+}
+
+.chat_list {
+  height: calc(100% - 50px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-top: 15px;
+  overflow-y: auto;
+}
+
+.chat_item_skeletom {
+  width: 100%;
+  height: 70px;
+  padding: 8px;
+  border-radius: 10px;
+
+  background: #312f2f;
+
+  display: grid;
+
+  grid-template-columns: 50px 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.friend_chat_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  padding-left: 10px;
+}
