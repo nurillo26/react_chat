@@ -5,7 +5,7 @@
 ## Демо
 
 Только для десктопа, адаптива под мобильные устройства нет.
-`https://machat09.netlify.app`
+[https://machat09.netlify.app](https://machat09.netlify.app)
 
 ## Инструкции по установке
 
