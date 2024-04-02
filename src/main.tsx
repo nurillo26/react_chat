@@ -13,6 +13,7 @@ import ChatBlock from './components/ChatBlock/ChatBlock';
 
 import './index.css';
 import ChatWindow from './components/ChatWindow/ChatWindow';
+import NotFoundPage from './pages/NotFoundPage';
 
 const router = createBrowserRouter([
   {
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: <div>Тут будет несуществующая страница</div>,
+    element: <NotFoundPage />,
   },
 ]);
 
